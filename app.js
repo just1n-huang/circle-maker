@@ -9,6 +9,7 @@ container.addEventListener("click", (ev) => {
   // console.log(ev.target.id);
   if (ev.target.id !== "container") {
     ev.target.parentNode.removeChild(ev.target);
+    // ev.target.remove(); also works
     span.innerText = span.innerText * 1 - 1;
   }
 });
